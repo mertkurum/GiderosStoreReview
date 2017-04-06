@@ -9,5 +9,6 @@ SKStoreReviewController plugin for Gideros
 # Usage
 <pre>
 require("storeReview")
-storeReview:requestReview()
+local hasShown = storeReview:requestReview()
+print(hasShown)
 </pre>
