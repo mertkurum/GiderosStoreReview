@@ -1,3 +1,5 @@
 require("storeReview")
 
-storeReview:requestReview()
+local hasShown = storeReview:requestReview()
+
+print(hasShown)

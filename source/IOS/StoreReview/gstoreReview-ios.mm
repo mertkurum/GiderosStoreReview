@@ -10,9 +10,12 @@
 #import "GAI.h"
 #include <StoreKit/StoreKit.h>
 
-void gstorereview_requestReview()
+bool gstorereview_requestReview()
 {
     if ([UIDevice currentDevice].systemVersion.floatValue >= 10.3) {
         [SKStoreReviewController requestReview];
+        return true;
     }
+    
+    return false;
 }

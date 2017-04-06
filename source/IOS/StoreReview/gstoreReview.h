@@ -15,7 +15,7 @@
 extern "C" {
 #endif
     
-    void gstorereview_requestReview();
+    bool gstorereview_requestReview();
     
 #ifdef __cplusplus
 }

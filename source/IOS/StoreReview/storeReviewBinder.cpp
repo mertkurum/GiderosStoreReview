@@ -12,10 +12,10 @@
 
 static int requestReview(lua_State *L)
 {
+    auto isAvailable = (bool)gstorereview_requestReview();
+    lua_pushboolean(L, isAvailable);
     
-    gstorereview_requestReview();
-    
-    return 0;
+    return 1;
 }
 
 static int loader(lua_State* L)
